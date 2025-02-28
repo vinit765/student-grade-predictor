@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 Student Score Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Student Score Predictor</h1>
+        <p>Fill in the details below to predict your final score! 🎯</p>
+        
+        <div class="form-group">
+            <label for="attendance">📅 Attendance (%)</label>
+            <input type="number" id="attendance" placeholder="Enter Attendance %" required>
+        </div>
+
+        <div class="form-group">
+            <label for="midterm">📖 Midterm Score</label>
+            <input type="number" id="midterm" placeholder="Enter Midterm Score" required>
+        </div>
+
+        <div class="form-group">
+            <label for="final">📝 Final Score</label>
+            <input type="number" id="final" placeholder="Enter Final Score" required>
+        </div>
+
+        <div class="form-group">
+            <label for="assignments">🗂 Assignments Avg</label>
+            <input type="number" id="assignments" placeholder="Enter Assignments Average" required>
+        </div>
+
+        <div class="form-group">
+            <label for="study_hours">⏳ Study Hours per Week</label>
+            <input type="number" id="study_hours" placeholder="Enter Study Hours per Week" required>
+        </div>
+
+        <div class="form-group">
+            <label for="stress">😵‍💫 Stress Level (1-10)</label>
+            <input type="number" id="stress" placeholder="Enter Stress Level (1-10)" required>
+        </div>
+
+        <div class="form-group">
+            <label for="sleep">💤 Sleep Hours per Night</label>
+            <input type="number" id="sleep" placeholder="Enter Sleep Hours per Night" required>
+        </div>
+
+        <button onclick="predictScore()">🔮 Predict Score</button>
+
+        <h2 id="result">🤔 Waiting for input...</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
